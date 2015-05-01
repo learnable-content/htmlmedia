@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Media Player CSS</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/mediaplayer.css">
+</head>
+<body>
+
+<div class="media">
+	<div class="media-player">
+		<video poster="media/poster.png" preload="auto">
+			<source src="media/video.webm" type='video/webm;codecs="vp8, vorbis"'>
+	  		<source src="media/video.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'>
+	  		<source src="media/video.ogv" type='video/ogg;codecs="theora, vorbis"'>
+			
+			<p>
+				Your browser doesn't support HTML5 video playback.
+				You can <a href="media/video.mp4">Download the video instead</a>.
+			</p>
+		</video>
+		<div class="media-player-controls clearfix">
+			<button type="button" class="controls button controls-play-pause face-play">
+				<span class="visually-hidden">Play / Pause</span>
+			</button>
+			<input type="range" class="controls controls-seek" min="0" max="100" step="1" value="0">
+			<button type="button" class="controls button controls-mute face-vol-full">
+				<span class="visually-hidden">Mute</span>
+			</button>
+			<input type="range" class="controls controls-volume" min="0" max="1" step="0.05" value="1">
+			<button type="button" class="controls button controls-fullscreen face-expand">
+				<span class="visually-hidden">Toggle Full-screen</span>
+			</button>
+		</div>
+	</div>
+</div>
+
+<div class="media">
+	<div class="media-player">
+		<audio preload="auto">
+			<source src="media/audio.ogg" type="audio/ogg">
+			<source src="media/audio.mp3" type="audio/mpeg3">
+		</audio>
+		<div class="media-player-controls clearfix">
+			<button type="button" class="controls button controls-play-pause face-play">
+				<span class="visually-hidden">Play / Pause</span>
+			</button>
+			<input type="range" class="controls controls-seek" min="0" max="100" step="1" value="0">
+			<button type="button" class="controls button controls-mute face-vol-full">
+				<span class="visually-hidden">Mute</span>
+			</button>
+			<input type="range" class="controls controls-volume" min="0" max="1" step="0.05" value="1">
+			<button type="button" class="controls button controls-fullscreen face-expand">
+				<span class="visually-hidden">Toggle Full-screen</span>
+			</button>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
