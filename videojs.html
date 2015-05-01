@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Video.js Example</title>
+
+	<link rel="stylesheet" href="video-js/video-js.min.css">
+	<link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+
+<div class="video">
+	<video id="test-video" controls poster="media/poster.png" class="video-js vjs-default-skin" preload="auto">
+		<source src="media/video.webm" type='video/webm;codecs="vp8, vorbis"'>
+  		<source src="media/video.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'>
+  		<source src="media/video.ogv" type='video/ogg;codecs="theora, vorbis"'>
+
+		<track src="media/subtitles.vtt" srclang="en" label="English" default>
+		
+		<p class="vjs-no-js">
+			Your browser doesn't support HTML5 video playback.
+			You can <a href="media/video.mp4">download the video instead</a>.
+		</p>
+	</video>
+</div>
+
+<script src="video-js/video.js"></script>
+<script>
+//basic config for video js
+videojs.options.flash.swf = "video-js/video-js.swf";
+window.onload = function() {
+	videojs("test-video",{width: '100%', height: '540'});
+}
+</script>
+</body>
+</html>
