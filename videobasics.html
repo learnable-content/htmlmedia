@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Video Tag Basics</title>
+	<link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+
+<div class="video">
+	<video src="media/video.mp4" autoplay></video>
+</div>
+
+<div class="video">
+	<video src="media/video.mp4" controls></video>
+</div>
+
+<div class="video">
+	<video controls poster="media/poster.png">
+		<source src="media/video.webm" type='video/webm;codecs="vp8, vorbis"'>
+  		<source src="media/video.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'>
+  		<source src="media/video.ogv" type='video/ogg;codecs="theora, vorbis"'>
+		<p>
+			Your browser doesn't support HTML5 video playback.
+			You can <a href="media/video.mp4">download the video instead</a>.
+		</p>
+	</video>
+</div>
+
+<div class="video">
+	<video controls poster="media/poster.png">
+		<source src="media/video.webm" type='video/webm;codecs="vp8, vorbis"'>
+  		<source src="media/video.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'>
+  		<source src="media/video.ogv" type='video/ogg;codecs="theora, vorbis"'>
+		<p>
+			Your browser doesn't support HTML5 video playback.
+			You can <a href="media/video.mp4">download the video instead</a>.
+		</p>
+	</video>
+</div>
+
+</body>
+</html>
