@@ -11,9 +11,9 @@
 
 <div class="video">
 	<video id="test-video" controls poster="media/poster.png" class="video-js vjs-default-skin" preload="auto">
-		<source src="media/video.webm" type='video/webm;codecs="vp8, vorbis"'>
-  		<source src="media/video.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'>
-  		<source src="media/video.ogv" type='video/ogg;codecs="theora, vorbis"'>
+		<source src="media/video.webm" type='video/webm'>
+  		<source src="media/video.mp4" type='video/mp4'>
+  		<source src="media/video.ogv" type='video/ogg'>
 
 		<track src="media/subtitles.vtt" srclang="en" label="English" default>
 		
@@ -28,9 +28,7 @@
 <script>
 //basic config for video js
 videojs.options.flash.swf = "video-js/video-js.swf";
-window.onload = function() {
-	videojs("test-video",{width: '100%', height: '540'});
-}
+videojs("test-video",{width: '100%', height: '540'});
 </script>
 </body>
 </html>
