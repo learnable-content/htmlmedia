@@ -10,7 +10,6 @@ Handouts are available via the first lesson of a course as .md or .pdf file form
 
 **Happy Learning!**
 
-* [Test link](https://github.com/learnable-content/htmlmedia/blob/lesson1.1/Getting_Started_with_HTML_Media_handouts/lesson1-1.md)
 ## Course Handout Index
 
 * [Lesson 1-1](https://github.com/learnable-content/htmlmedia/blob/lesson1.1/Getting_Started_with_HTML_Media_handouts/lesson1-1.md)
