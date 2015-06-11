@@ -72,6 +72,23 @@
 	margin-right: 0;
 }
 
+	/* styles for fullscreen playback */
+
+	.media-player.in-fullscreen {
+		max-width: 100%;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.media-player.in-fullscreen .media-player-controls {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: 2147483647; /* max z-index value most browsers can handle */
+	}
+
 /* icon font assignment */
 
 .media-player .button:before {
