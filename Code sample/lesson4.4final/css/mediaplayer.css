@@ -1,0 +1,150 @@
+/*
+-- Media Player CSS
+*/
+
+/*
+-- Font
+*/
+
+@font-face {
+	font-family: 'mediaplayer';
+	src: url('../font/mediaplayer.eot?88461241');
+	src: url('../font/mediaplayer.eot?88461241#iefix') format('embedded-opentype'),
+		 url('../font/mediaplayer.woff?88461241') format('woff'),
+		 url('../font/mediaplayer.ttf?88461241') format('truetype'),
+		 url('../font/mediaplayer.svg?88461241#mediaplayer') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*
+-- Media Player Styles
+*/
+
+.media-player button, .media-player input {
+	cursor: pointer;
+}
+
+.media-player button:focus, .media-player input:focus {
+	outline: 1px dotted red;
+}
+
+/* general styles */
+
+.media-player {
+	min-height: 2em; /* to solve problems with the audio tag not having any height in some browsers */
+}
+
+.media-player video {
+	width: 100%;
+}
+
+.media-player-controls {
+	background: #000;
+}
+
+/* controls structure */
+
+.media-player .controls {
+	float: left;
+	height: 2.5rem;
+	margin-right: 1%;
+	display: block;
+}
+
+.media-player .button {
+	border: 0;
+	color: #FFF;
+	background: transparent;
+	text-align: center;
+	width: 4%;
+}
+
+.media-player .controls-seek {
+	width: 75%;
+}
+
+.media-player .controls-volume {
+	width: 9%;
+}
+
+.media-player .controls-fullscreen {
+	margin-right: 0;
+}
+
+	/* styles for fullscreen playback */
+
+	.media-player.in-fullscreen {
+		max-width: 100%;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.media-player.in-fullscreen .media-player-controls {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: 2147483647; /* max z-index value most browsers can handle */
+	}
+
+/* icon font assignment */
+
+.media-player .button:before {
+	font-family: mediaplayer;
+	display: block;
+	font-size: 1.25em;
+}
+
+.media-player .face-play:before {
+	content: '\e800';
+}
+
+.media-player .face-pause:before {
+	content: '\e801';
+}
+
+.media-player .face-vol-full:before {
+	content: '\e804';
+}
+
+.media-player .face-vol-mid:before {
+	content: '\e803';
+}
+
+.media-player .face-vol-mute:before {
+	content: '\e802';
+}
+
+.media-player .face-expand:before {
+	content: '\e805';
+}
+
+.media-player .face-restore:before {
+	content: '\e806';
+}
+
+/*
+-- General use classes - source: www.html5boilerplate.com
+*/
+
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.visually-hidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
