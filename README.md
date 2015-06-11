@@ -11,7 +11,7 @@ Handouts are available via the first lesson of a course as .md or .pdf file form
 **Happy Learning!**
 
 ## Course Handout Index
-
+* [Test link](htmlmedia/tree/lesson1.1)
 * [Lesson 1-1](Getting_Started_with_HTML_Media_handouts/lesson1-1.md)
 * [Lesson 1-2](Getting_Started_with_HTML_Media_handouts/lesson1-2.md)
 * [Lesson 2-1](Getting_Started_with_HTML_Media_handouts/lesson2-1.md)
