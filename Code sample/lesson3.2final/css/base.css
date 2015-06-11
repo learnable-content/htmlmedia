@@ -1,0 +1,10 @@
+* {
+	margin: 0;
+	padding: 0;
+	/*box-sizing: border-box; -- had to disable it or else the audio.js skin would not work properly*/
+}
+
+.audio {
+	width: 60em;
+	margin: 2em auto;
+}

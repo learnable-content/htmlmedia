@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MediaElement Example</title>
+	
+	<link rel="stylesheet" href="mediaelement/mediaelementplayer.min.css">
+	<link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+
+<div class="video">
+	<video id="test-video" controls poster="media/poster.png" preload="auto">
+		<source src="media/video.webm" type='video/webm'>
+  		<source src="media/video.mp4" type='video/mp4'>
+  		<source src="media/video.ogv" type='video/ogg'>
+
+		<track src="media/subtitles.vtt" srclang="en" label="English" default>
+		
+		<p>
+			Your browser doesn't support HTML5 video playback.
+			You can <a href="media/video.mp4">download the video instead</a>.
+		</p>
+	</video>
+</div>
+
+<script src="mediaelement/jquery.js"></script>
+<script src="mediaelement/mediaelement-and-player.min.js"></script>
+<script>
+$('video, audio').mediaelementplayer();
+</script>
+</body>
+</html>

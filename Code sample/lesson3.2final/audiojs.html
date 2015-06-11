@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Audio.js Example</title>
+	
+	<link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+	
+<div class="audio">
+	<audio preload="auto">
+		<source src="media/audio.ogg" type="audio/ogg">
+		<source src="media/audio.mp3" type="audio/mpeg3">
+	</audio>
+</div>
+
+<script src="audiojs/audio.min.js"></script>
+<script>
+//initialize audio.js
+audiojs.events.ready(function() {
+	var as = audiojs.createAll();
+});
+</script>
+
+</body>
+</html>

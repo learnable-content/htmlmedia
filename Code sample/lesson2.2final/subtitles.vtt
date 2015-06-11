@@ -1,0 +1,16 @@
+WEBVTT
+
+1
+00:00:01.000 --> 00:00:10.000 line:1 position:20% size:30% align:start
+<v Narrator>Pouring <i>coffee</i> into a mug...</v>
+
+NOTE This is a comment.
+
+NOTE
+Multi-line comment.
+Multi-line comment.
+
+2
+00:00:20.000 --> 00:00:27.000
+<b>Done</b>!
+Enjoy your <c.example>coffee</c>!

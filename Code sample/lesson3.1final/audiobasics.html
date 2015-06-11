@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Audio Tag Basics</title>
+	
+	<link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+
+<div class="audio">
+	<!-- use the "autoplay attribute below to play this audio -->
+	<audio src="media/audio.mp3" type="audio/mpeg3"></audio>
+</div>
+
+<div class="audio">
+	<audio controls>
+		<source src="media/audio.mp3" type="audio/mpeg3">
+		<source src="media/audio.ogg" type="audio/ogg">
+		<p>
+			Your browser doesn't support HTML5 audio playback.
+			<a href="media/audio.mp3">Download the file here</a>.
+		</p>
+	</audio>
+</div>
+
+</body>
+</html>
