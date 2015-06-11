@@ -10,4 +10,4 @@ Handouts are available via the first lesson of a course as .md or .pdf file form
 
 **Happy Learning!**
 
-* [Test link](htmlmedia/tree/lesson1.1)
+* [Test link](/tree/lesson1.1)
