@@ -1,4 +1,4 @@
-![](htmlmedia/lesson2.1/Getting_Started_with_HTML_Media_handouts/headingslesson_2.1.jpg)
+![](htmlmedia/lesson2.1/Getting_Started_with_HTML_Media_handouts/headings/lesson_2.1.jpg)
 
 # Introduction
 
